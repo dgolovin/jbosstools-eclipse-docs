@@ -17,7 +17,13 @@
    </feature>
    <feature url="features/org.jboss.tools.jsf.doc.feature.source_0.0.0.jar" id="org.jboss.tools.jsf.doc.feature.source" version="0.0.0">
       <category name="AllSources"/>
-   </feature> 
+   </feature>
+   <feature url="features/org.jboss.tools.maven.doc.feature_0.0.0.jar" id="org.jboss.tools.maven.doc.feature" version="0.0.0">
+      <category name="AllFeatures"/>
+   </feature>
+   <feature url="features/org.jboss.tools.maven.doc.feature.source_0.0.0.jar" id="org.jboss.tools.maven.doc.feature.source" version="0.0.0">
+      <category name="AllSources"/>
+   </feature>
    <feature url="features/org.jboss.tools.foundation.help.feature_0.0.0.jar"  id="org.jboss.tools.foundation.help.feature" version="0.0.0">
       <category name="AllFeatures"/>
    </feature>

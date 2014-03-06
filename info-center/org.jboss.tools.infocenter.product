@@ -27,14 +27,12 @@ Red Hat, Inc. - Initial implementation.
 
    <windowImages/>
 
-
    <launcher>
       <solaris/>
       <win useIco="true">
          <bmp/>
       </win>
    </launcher>
-
 
    <vm>
    </vm>
@@ -49,8 +47,9 @@ Red Hat, Inc. - Initial implementation.
    </plugins>
 
    <features>
-      <feature id="org.jboss.tools.jsf.doc.feature"/>
       <feature id="org.eclipse.help"/>
+      <feature id="org.jboss.tools.jsf.doc.feature"/>
+      <feature id="org.jboss.tools.maven.doc.feature" version="4.2.0.qualifier"/>
    </features>
 
    <configurations>

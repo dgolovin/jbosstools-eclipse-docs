@@ -16,6 +16,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                 <module>org.jboss.tools.foundation.help</module>
 		<module>org.jboss.tools.jsf.doc.ref.guide</module>
 		<module>org.jboss.tools.jsf.doc.tutorial</module>
+		<module>org.jboss.tools.maven.doc.ref.guide</module>
 	</modules>
 </project>
 	
