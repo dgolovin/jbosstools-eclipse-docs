@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-Vendor: %Bundle-Vendor
+Bundle-SymbolicName: org.jboss.tools.jsf.doc.ref.guide;singleton:=true
+Bundle-Version: 4.2.0.qualifier
+Require-Bundle: org.eclipse.help.base;bundle-version="4.0.100"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy 
+Bundle-Localization: plugin

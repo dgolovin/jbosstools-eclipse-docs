@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<description>
+	To install these features, point Eclipse at this site.
+	</description>
+
+	<category-def label="JBoss Tools Eclipse Documentation and Context Help (Nightly Binaries)" name="AllFeatures">
+		<description>JBoss Tools Eclipse Documentation and Context Help (Nightly Build Binaries Update Site).</description>
+	</category-def>
+	<category-def label="JBoss Tools Eclipse Documentation and Context Help (Nightly Sources)" name="AllSources">
+		<description>JBoss Tools Eclipse Documentation and Context Help (Nightly Build Sources Update Site).</description>
+	</category-def>
+
+
+   <feature url="features/org.jboss.tools.jsf.doc.feature_0.0.0.jar" id="org.jboss.tools.jsf.doc.feature" version="0.0.0">
+      <category name="AllFeatures"/>
+   </feature>
+   <feature url="features/org.jboss.tools.jsf.doc.feature.source_0.0.0.jar" id="org.jboss.tools.jsf.doc.feature.source" version="0.0.0">
+      <category name="AllSources"/>
+   </feature> 
+   <feature url="features/org.jboss.tools.foundation.help.feature_0.0.0.jar"  id="org.jboss.tools.foundation.help.feature" version="0.0.0">
+      <category name="AllFeatures"/>
+   </feature>
+   <feature url="features/org.jboss.tools.foundation.help.feature.source_0.0.0.jar" id="org.jboss.tools.foundation.help.feature.source" version="0.0.0">
+      <category name="AllSources"/>
+   </feature> 
+</site>

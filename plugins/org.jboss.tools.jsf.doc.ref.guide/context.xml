@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts>
+   <context id="faces_config_editor">
+      <description>The editor provides easy way to change JSF configuration file. It provides different views for file content:
+*   Diagram
+*   Tree
+*   Source</description>
+      <topic href="eclipse/jsf_config_file.html" label="JSF Configuration File Editor"/>
+   </context>
+   <context id="new_jsf_project">
+      <topic href="eclipse/projects.html#new_jsf_project" label="Creating a New JSF Project"/>
+      <description>It is easy to create a new project that contains all the JSF libraries, tag libraries and JSF configuration file with the aid of a special wizard.</description>
+   </context>
+   <context id="import_jsf_project">
+      <topic href="eclipse/projects.html" label="Importing Existing JSF Projects with Any Structure"/>
+      <description>import_jsf_project</description>
+   </context>
+   <context id="new_faces_config_file_wizard" title="new_faces_config_file_wizard">
+      <description>new_faces_config_file_wizard</description>
+      <topic href="eclipse/projects.html" label="Creating New JSF Configuration File"/>
+   </context>
+</contexts>

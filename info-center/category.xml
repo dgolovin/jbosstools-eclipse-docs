@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <description>JBoss Tools Documentation Infocenter</description>
+
+  <feature id="org.eclipse.help">
+    <category name="ifocenter" />
+  </feature>
+
+  <feature id="org.jboss.tools.jsf.doc.feature">
+    <category name="ifocenter" />
+  </feature>
+
+  <category-def name="ifocenter" label="JBoss Tools Info Center">
+    <description>JBoss Tools Documentation</description>
+  </category-def>
+</site>

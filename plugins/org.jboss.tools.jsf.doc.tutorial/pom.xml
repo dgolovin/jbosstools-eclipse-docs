@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.jboss.tools.eclipse-docs</groupId>
+		<artifactId>plugins</artifactId>
+		<version>4.2.0-SNAPSHOT</version>
+	</parent>
+	<groupId>org.jboss.tools.jsf.plugins</groupId>
+	<artifactId>org.jboss.tools.jsf.doc.tutorial</artifactId>
+	<packaging>eclipse-plugin</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.8</version>
+				<executions>
+					<execution>
+						<id>unpack</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.jboss.tools</groupId>
+									<artifactId>JSF_Tools_Tutorial-en-US</artifactId>
+									<version>4.2.0.Final-SNAPSHOT</version>
+									<type>jdocbook</type>
+									<outputDirectory>${project.build.directory}/docs</outputDirectory>
+									<destFileName>JSF_Tools_Tutorial.zip</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>${maven.antrun.plugin.version}</version>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>generate-sources</phase>
+						<configuration>
+							<quiet>true</quiet>
+							<tasks>
+								<unzip
+									src="${project.build.directory}/docs/JSF_Tools_Tutorial.zip"
+									dest="${basedir}">
+  <patternset>
+   <include name="eclipse/**/*" />
+   <exclude name="eclipse/META-INF/**.*"/>
+   <exclude name="eclipse/plugin.xml"/>
+  </patternset>
+
+								</unzip>
+<replace file="${basedir}/eclipse/toc.xml">
+  <replacetoken>href=&quot;</replacetoken>
+  <replacevalue>href=&quot;eclipse/</replacevalue>
+</replace>
+<replace file="${basedir}/eclipse/toc.xml">
+  <replacetoken>topic=&quot;</replacetoken>
+  <replacevalue>topic=&quot;eclipse/</replacevalue>
+</replace>
+<replace file="${basedir}/eclipse/toc.xml">
+  <replacetoken>&lt;!DOCTYPE toc </replacetoken>
+  <replacevalue></replacevalue>
+</replace>
+<replace file="${basedir}/eclipse/toc.xml">
+  <replacetoken>PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</replacetoken>
+  <replacevalue></replacevalue>
+</replace>
+
+
+
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>commons-net</groupId>
+						<artifactId>commons-net</artifactId>
+						<version>1.4.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant</artifactId>
+						<version>1.7.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-nodeps</artifactId>
+						<version>1.7.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-trax</artifactId>
+						<version>1.7.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-commons-net</artifactId>
+						<version>1.7.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-apache-regexp</artifactId>
+						<version>1.7.1</version>
+					</dependency>
+					<dependency>
+						<groupId>ant-contrib</groupId>
+						<artifactId>ant-contrib</artifactId>
+						<version>1.0b2</version>
+					</dependency>
+					<dependency>
+						<groupId>net.sf.saxon</groupId>
+						<artifactId>Saxon-HE</artifactId>
+						<version>9.4</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+</project>

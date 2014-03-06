@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -classpath target/products/org.jboss.tools.infocenter/linux/gtk/x86/plugins/org.eclipse.help.base_4.0.100.v20140123-1600.jar  org.eclipse.help.standalone.Infocenter -command start -eclipsehome target/products/org.jboss.tools.infocenter/linux/gtk/x86/ -port 8081
