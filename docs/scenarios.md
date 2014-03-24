@@ -44,7 +44,3 @@ After remote info center added or documentation feature installed context help i
 Click on topic opens documentation in the same documentation tray (see below)
 
 ![](./images/9-new-jsf-opened-topic.png)
-=======
-Scenarios covered by this proof of concept
-
-![alternate text](https://github.com/dgolovin/jbosstools-eclipse-docs/blob/master/docs/images/1-new-jsf-now-1.png)
