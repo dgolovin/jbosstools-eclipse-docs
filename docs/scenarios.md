@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Scenarios covered by this proof of concept
 
 To see how context help looks like in New JSF Project wizard now open New Wizard Selection dialog.
@@ -49,4 +48,3 @@ Click on topic opens documentation in the same documentation tray (see below)
 Scenarios covered by this proof of concept
 
 ![alternate text](https://github.com/dgolovin/jbosstools-eclipse-docs/blob/master/docs/images/1-new-jsf-now-1.png)
->>>>>>> 61e8423... Update and rename scenarios.adoc to scenarios.md
